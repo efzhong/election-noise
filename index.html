@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Election Noise</title>
+  <!-- pinned to p5 1.x: p5.sound changed in 2.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/addons/p5.sound.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; background: #f4f2ee; }
+    body { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; color: #222; }
+    main { display: flex; flex-direction: column; align-items: center; padding: 24px 0; gap: 10px; }
+    .controls { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #555; }
+    .controls input[type=range] { width: 180px; accent-color: #aa2819; }
+    .controls button {
+      font: inherit; padding: 3px 12px; border: 1px solid #999; background: transparent;
+      border-radius: 3px; cursor: pointer; color: #333;
+    }
+    .controls button:hover { border-color: #aa2819; color: #aa2819; }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="sketch"></div>
+    <div id="controls"></div>
+  </main>
+  <script src="sketch.js"></script>
+</body>
+</html>
