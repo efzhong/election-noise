@@ -1,6 +1,6 @@
 **Election Noise**
 
-Political ads don’t arrive evenly across the country and some states have an overwhelming flow of ads before election day. I'm interested in noise as something you can watch and something you can hear.
+Political ads don’t arrive evenly across the country and some states have an overwhelming flow of ads before election day. I'm interested in noise as something you can watch, hear, and feel.
 
 This map shows every US congressional district and the spending figures come from Google’s Political Ads Transparency Report. Google publishes this as a public dataset in BigQuery. I took every election ad that started running between January 1, 2025 and Election Day, November 3, 2026, and added up the spending by state.
 
@@ -22,9 +22,9 @@ Using the help of Claude.ai, I was able to figure out that spending should be pu
 
 Regarding sound, the hiss is pink noise generated live in the browser with p5.sound. It runs through a low-pass filter, which cuts the high frequencies and makes it sound muffled. When you hover over a state, the state’s spending sets the volume and how much of the high end the filter lets through. Low-spending states sound like muffled static while high-spending states sound more frenetic and closer to you (in a similar way where you may feel the midterm ads have surrounded you for weeks). The volume slider and mute button under the map set the overall level for anyone who wants to adjust the sound.
 
-Please note that due to limitations to what I could find, this only covers ads on Google and YouTube. Political ad money also goes to broadcast TV and streaming, which were harder for me to track down. Spending is calculated by state, so every district in a state moves at the same level. The district lines are there for texture and scale, not as separate measurements. Each district would need its own figure for that, which could come from matching ZIP-targeted ads to districts. However, I personally found it amazing how much is spent solely on what's shown in this map -- there are millions more that go into these campaigns. As someone who doesn't pay for cable, I do wonder if the ads shown on YouTube are perhaps created to reach a different demographic than one that consistently watches TV.
+Due to limitations to what I could find, this only covers ads on Google and YouTube. Political ad money also goes to broadcast TV and streaming, which were harder for me to track down. Spending is calculated by state, so every district in a state moves at the same level. The district lines are there for texture and scale, and not as separate measurements. Each district would need its own figure for that, which could come from matching ZIP-targeted ads to districts. However, it's amazing how much is spent solely on what's shown in this map -- there are millions more that go into these campaigns. 
 
-Links to the wonderful sources that inspired this: 
+Links to the sources that inspired this: 
 
 https://en.wikipedia.org/wiki/Perlin_noise
 
